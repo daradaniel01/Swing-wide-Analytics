@@ -29,6 +29,7 @@
     font-size: 28px;
     /* color: #284966; */
     color: #666;
+    line-height: 2.2rem;
   }
   .content p{
     color: #666;
@@ -162,6 +163,7 @@ svg{
 .txt{
     color: #ffffff;
     text-align: center;
+    line-height: 2.2rem;
     font-size: 2rem;
 }
 .service-txt{
@@ -269,191 +271,102 @@ svg{
         width: 100%;
     }
 }
-.large-container {
-  position: static;
-  max-width: 1580px;
-  padding: 0px 30px;
-  margin: 0 auto;
+:root{
+  --primary-color: #22b9ff;
+  --primary-color-dark: #6783fe;
+  --text-dark: #333333;
+  --white: #ffffff;
 }
-
-.testimonial-section {
-  position: relative;
-  padding-top: 80px;
-  padding-bottom: 210px;
-  overflow: hidden;
-  &:before {
-    position: absolute;
-    left: -200px;
-    top: 22%;
-    background-image: url(http://t.commonsupport.com/adro/images/icons/ring-circle.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 701px;
-    height: 756px;
-    content: "";
-    -webkit-animation: fa-spin 25s infinite alternate;
-    -moz-animation: fa-spin 25s infinite alternate;
-    -ms-animation: fa-spin 25s infinite alternate;
-    -o-animation: fa-spin 25s infinite alternate;
-    animation: fa-spin 25s infinite alternate;
-  }
-  .sec-title {
-    position: relative;
-    margin-bottom: 115px;
-    .title {
-      margin-bottom: 20px;
-    }
-  }
-  .testimonial-carousel {
-    position: relative;
-    max-width: 1100px;
-    margin: 0 -50px;
-  }
+.hearder{
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Roboto';
 }
-
-.testimonial-block {
-  position: relative;
-  padding: 50px;
-  .inner-box {
-    padding: 80px 105px;
-    background-color: #ffffff;
-    box-shadow: 0 0 50px rgba(226, 222, 232, 0.75);
-  }
-  .text {
-    position: relative;
-    display: block;
-    font-size: 18px;
-    line-height: 32px;
-    color: #282331;
-    font-weight: 400;
-    margin-bottom: 50px;
-    font-family: "Muli", sans-serif;
-  }
-  .info-box {
-    position: relative;
-    padding-left: 115px;
-    padding-top: 10px;
-    .thumb {
-      position: absolute;
-      left: 0;
-      top: 0;
-      height: 82px;
-      width: 82px;
-      img {
-        border: 6px solid #e5e6fa;
-        border-radius: 50%;
-        overflow: hidden;
-        display: block;
-        width: 100%;
-        box-shadow: 0 45px 45px rgba(147, 147, 147, 0.35);
-      }
-    }
-    .name {
-      position: relative;
-      display: block;
-      font-size: 21px;
-      line-height: 1.2em;
-      color: #382c4d;
-      font-weight: 700;
-      margin-bottom: 10px;
-      font-family: "Niramit", sans-serif;
-    }
-    .designation {
-      position: relative;
-      display: block;
-      font-size: 16px;
-      line-height: 24px;
-      color: #8053f7;
-      font-weight: 400;
-      font-family: "Muli", sans-serif;
-    }
+.containeeer{
+  max-width: 1200px;
+  margin: auto;
+  padding: 6rem 1rem 1rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10rem;
+}
+.container__left h1{
+  margin-bottom: 2rem;
+  line-height: 2.2rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+.container__left p{
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+.container__left button{
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, var(--primary-color), var(--primary-color-dark));
+  color: var(--white);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.container__left button:hover{
+  background: linear-gradient(to right, #22b9ff96, #6783feb0);
+}
+.container__right{
+  display: grid;
+  gap: 2rem;
+}
+.card4{
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, .2);
+  cursor: pointer;
+}
+.card4 img{
+  max-width: 75px;
+  border-radius: 100%;
+}
+.card4__content{
+  display: flex;
+  gap: 1rem;
+}
+.card4__content span i{
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+.card4__details p{
+  font-style: italic;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+.card4__details h4{
+  text-align: right;
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 500;
+}
+@media (max-width:1200px){
+  .containeeer{
+    gap: 3rem;
   }
 }
-
-.testimonial-carousel {
-  .owl-nav {
-    position: absolute;
-    right: 75px;
-    bottom: 70px;
+@media (max-width:900px){
+  .containeeer{
+    grid-template-columns: repeat(1, 1fr);
   }
-  .owl-next, .owl-prev {
-    position: relative;
-    display: inline-block;
-    height: 75px;
-    width: 75px;
-    line-height: 75px;
-    text-align: center;
-    border-radius: 50%;
-    background-color: #ffffff;
-    -webkit-transition: all 300ms ease;
-    -moz-transition: all 300ms ease;
-    -ms-transition: all 300ms ease;
-    -o-transition: all 300ms ease;
-    transition: all 300ms ease;
-  }
-  .owl-next:hover, .owl-prev:hover {
-    background-color: #00df97;
-    box-shadow: 0 24px 24px rgba(187, 187, 187, 0.75);
+  .container__right{
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-
-.arrow-right, .arrow-left {
-  position: relative;
-  display: inline-block;
-  height: 9px;
-  width: 43px;
-  background-image: url(http://t.commonsupport.com/adro/images/icons/arrow-left-2.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.arrow-right {
-  background-image: url(http://t.commonsupport.com/adro/images/icons/arrow-right-2.png);
-}
-
-.testimonial-section .thumb-layer {
-  position: absolute;
-  right: 30px;
-  top: 120px;
-  .image {
-    position: relative;
-    margin-right: 0;
-    img {
-      display: inline-block;
-      max-width: 100%;
-      height: auto;
-    }
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .testimonial-section .sec-title {
-    margin-bottom: 50px;
-  }
-  .testimonial-block {
-    padding: 0;
-    .inner-box {
-      box-shadow: none;
-      border: 2px solid #f1f1f1;
-    }
-  }
-  .testimonial-carousel {
-    .owl-nav {
-      position: relative;
-      left: 0;
-      bottom: 0;
-      margin-top: 20px;
-      text-align: center;
-    }
-    .owl-next, .owl-prev {
-      border: 2px solid #f1f1f1;
-    }
-  }
-}
-
-@media only screen and (max-width: 1366px) {
-  .large-container {
-    padding-left: 20px;
-    padding-right: 20px;
+@media (max-width:750px){
+  .container__right{
+    grid-template-columns: repeat(1, 1fr);
   }
 }

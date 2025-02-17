@@ -407,6 +407,34 @@ section {
   padding: 60px 0;
   overflow: clip;
 }
+#myBtnContainer{
+  margin-bottom: 45px;
+}
+#myBtnContainer button{
+border: none;
+color: black;
+background: transparent;
+font-size: 20px;
+font-weight: 600;
+cursor: pointer;   
+display: inline-block;
+margin: 0 25px;
+}
+#myBtnContainer button:hover{
+  color: #22b9ff;
+}
+
+#myBtnContainer button:focus{
+  outline: none;
+}
+.post .content h4{
+  font-size: 1rem;
+  font-weight: 700;
+}
+.post .card{
+  border: none;
+}
+
 /* testimonial section starts */
 .testimonial img:hover{
   transform: scale(1.2,1.2);

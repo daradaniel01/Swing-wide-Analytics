@@ -10,6 +10,36 @@
     <link rel="icon" type="image/png" sizes="16*16" href="[removal.ai]_d20ca198-e96a-4db3-a048-3918b9299858-12_ETDEQ4.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -71,7 +101,7 @@
         <div class="service-wrapper">
           <div class="service">
             <!-- <img src="images__7_-removebg-preview.png" alt=""> -->
-            <h2 class="txt">Data driven solutions at Swing-Wide Analytics.</h2>
+            <h2 class="txt">Data Driven Solutions at Swing-Wide Analytics.</h2>
             <p class="service-txt">At Swing-Wide Analytics, we specialize in providing expert solutions in Data Analysis, Academic Writing, Digital Marketing. Video Editing, Business Registration, Market Research, and Web Design. Our team is dedicated to delivering high quality results that drive business growthand success. </p>
             <div class="cards">
               <div class="card">
@@ -108,7 +138,7 @@
           </div>
         </div>
       </div>
-      <div class="hearder">
+      <!-- <div class="hearder">
         <div class="containeeer">
           <div class="container__left">
             <h1>Read what our customers love about us</h1>
@@ -149,7 +179,131 @@
             </div>
           </div>
         </div>
+      </div> -->
+      <!-- testimonial section starts  -->
+    <section class="testimonial mt-5 pt-5" id="testimonial">
+      <div class="row justify-content-evenly">
+        <div class="col-md-4 col-10" data-aos="slide-right">
+          <img src="./images/tastimonials-img.png" class="img-fluid" alt="" />
+        </div>
+        <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
+          <div class="heading">
+            <small>Testimonials</small>
+            <h3>Happy Clients Feedback</h3>
+            <!-- here we will use carousel element from bootstrap -->
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <img class="img-edit" src="./images/IMG-20241220-WA0010.jpg" alt="">
+                      <p class="text-muted">
+                        Their services made it so much easier. Their quick turn around
+                        and thorough analysis exceeded my expectations!
+                      </p>
+                      <h4>Dr. Zach</h4>
+                      <small class="fs-6 text-muted">Swing-Wide Analytics Client</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <img class="img-edit" src="./images/IMG-20250102-WA0024-removebg-preview.png" alt="">
+                      <p class="text-muted">
+                        Working with them was one of the best decision. Their team transformed our raw data into actionable 
+                        insights, giving us confidence to expand our business.
+                      </p>
+                      <h4>Dr. Eyo</h4>
+                      <small class="fs-6 text-muted">Swing-Wide Analytics Client</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <img class="img-edit" src="./images/IMG-20241220-WA0009-removebg-preview.png" alt="">
+                      <p class="text-muted">
+                        I couldn't have aced my statistics project without their guidance. They explained complex concepts
+                        in a way I could understand and that helped me create impactful visuals for my presentation. Highly recommend!
+                      </p>
+                      <h4>Dr. Modinat</h4>
+                      <small class="fs-6 text-muted">Swing-Wide Analytics Client</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <img class="img-edit" src="./images/IMG-20250119-WA0070.jpg" alt="">
+                      <p class="text-muted">
+                        As a graduate student, I was struggling to analyze my research data. The team not only simplified the process
+                        but also taught me how to interpret the results effectively. Their support was invaluable in helping
+                        me finish my thesis on time! 
+                      </p>
+                      <h4>Gabriella O.</h4>
+                      <small class="fs-6 text-muted">Swing-Wide Analytics Client</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <img class="img-edit" src="./images/IMG-20241220-WA0012~3.jpg" alt="">
+                      <p class="text-muted">
+                        Their dashboards have been a game-changer to me. We can now monitor key metrics in real-time and make faster, smarter
+                        decisions.
+                      </p>
+                      <h4>Tayo O.</h4>
+                      <small class="fs-6 text-muted">Swing-Wide Analytics Client</small>
+                    </div>
+                  </div>
+                </div>
+              </div><br>
+              <button
+                class="nextprev-btn rounded-pill prev-btn"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <i class="bi bi-arrow-left-circle-fill prev"></i>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="nextprev-btn rounded-pill next-btn"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <i class="bi bi-arrow-right-circle-fill next"></i>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
+    <!-- testimonial ends here -->
+
       <section id="call-to-action" class="call-to-action">
         <div class="container">
           <div class="row justify-content-center aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
@@ -157,7 +311,7 @@
               <div class="text-center">
                 <h3>Get in Touch</h3>
                 <p>We are just a call aware. You can call us or send a whatsapp message to the number below</p>
-                <a class="cta-btn" href="https://///wa.me/08034276641">Chat Now!!!</a>
+                <a target="_blank" class="cta-btn" href="https://wa.me/08034276641">Chat Now!!!</a>
               </div>
             </div>
           </div>
@@ -183,7 +337,7 @@
                 <div class="info-item aos-init aos-animate" data-aos="fade" data-aos-delay="200">
                   <i class="fa fa-map-marker"></i>
                   <h3>Address</h3>
-                  <p>Plot 182 Obasi Abara Close Mile 50 layout</p>
+                  <p>13 Apple Street, Peace Estate, Ibadan Progressive Union, Odeku, off Abbey Technical</p>
                   <p>Ibadan, Oyo State</p>
                 </div>
               </div><!-- End Info Item -->
@@ -193,7 +347,7 @@
                   <i class="fa fa-phone"></i>
                   <h3>Call Us</h3>
                   <p>+234 (0) 803 427 6641</p>
-                  <p>+234 (0) 806 747 0746</p>
+                  <p>+234 (0) 802 825 4641</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -201,8 +355,8 @@
                 <div class="info-item aos-init aos-animate" data-aos="fade" data-aos-delay="400">
                   <i class="fa fa-envelope"></i>
                   <h3>Email Us</h3>
-                  <p>info@zerotenweb.com.ng</p>
-                  <p>zerotentech@gmail.com</p>
+                  <p>info@swing-wideanalytics.com.ng</p>
+                  <p>swing-wideanalytics@gmail.com</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -211,7 +365,7 @@
                   <i class="fa fa-clock-o"></i>
                   <h3>Open Hours</h3>
                   <p>Monday - Saturday</p>
-                  <p>8:00AM - 05:00PM</p>
+                  <p>9:00AM - 05:00PM</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -255,7 +409,7 @@
     <div class="footer">
       <div class="roww">
       <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a target="_blank" href="https://www.linkedin.com/company/swing-wide-analytics/"><i class="fa fa-linkedin"></i></a>
       <a href="#"><i class="fa fa-instagram"></i></a>
       <a href="#"><i class="fa fa-twitter"></i></a>
       </div>

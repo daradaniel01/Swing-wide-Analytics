@@ -195,7 +195,7 @@ svg{
 }
 .card{
     height: 330px;
-    width: 370px;
+    width: 100%;
     background-color: #ffffff;
     padding: 5% 8%;
     border-radius: 8px;
@@ -268,8 +268,8 @@ svg{
         font-size: 19px;
     }
     .card{
-        height: 280px;
-        width: 320px;
+        height: 300px;
+        width: 100%;
     }
     .card i{
         margin-top: 20px;
@@ -409,6 +409,7 @@ section {
 }
 #myBtnContainer{
   margin-bottom: 45px;
+  line-height: 40px;
 }
 #myBtnContainer button{
 border: none;
@@ -620,4 +621,8 @@ margin: 0 25px;
     top:-10px;
     color: #fff;
     border-radius: 50%;
+  }
+  .col-10{
+   
+
   }
